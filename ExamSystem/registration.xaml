@@ -1,0 +1,45 @@
+﻿<Window x:Class="ExamSystem.registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamSystem"
+        mc:Ignorable="d"
+        Title="registration" Height="300" Width="300">
+    <Grid>
+            <StackPanel>
+                <Label Content="Экзамен" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Top"
+                       FontSize="20"/>
+                <Label Content="Введите имя" 
+                       Margin ="20,10,20,0"
+                       Height="28" />
+                <TextBox Name="tbNameReg" Height="22" Margin="20,0,20,0"  />
+                <Label Content="Введите логин" 
+                       Margin ="20,10,20,0"
+                       Height="28" />
+            <TextBox Name="tbLoginReg" Height="22" Margin="20,0,20,0"  />
+                <Label Content="Введите пароль" 
+                       Margin ="20,5,20,0"
+                       Height="28" />
+            <TextBox Name="tbPassReg" Height="22" Margin="20,0,20,0"  />
+                <StackPanel Orientation="Horizontal">
+                    <Button Content ="Регистарция"
+                            Margin="30,10,80,0" 
+                            Width="78"
+                            Click="registration_onClick"/>
+                    <Button Content ="Отмена" 
+                            Margin="0,10,0,0" 
+                            Width="74"
+                            Click="cancel_onClick
+                        "/>
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+        </Grid>
+   
+</Window>

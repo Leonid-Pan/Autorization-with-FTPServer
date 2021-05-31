@@ -1,0 +1,40 @@
+﻿<Window x:Class="ExamSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="Экзамен" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Top"
+               FontSize="20"/>
+            <Label Content="Логин" 
+                   Margin ="20,10,20,0"
+                   Height="28" />
+            <TextBox Name="tbLogin" Height="22" Margin="20,0,20,0"  />
+            <Label Content="Пароль" 
+               Margin ="20,5,20,0"
+               Height="28" />
+            <TextBox  Name="tbPass" Height="22" Margin="20,0,20,0"  />
+            <StackPanel Orientation="Horizontal">
+                <Button Content ="Войти"
+                        Margin="30,10,110,0" 
+                        Width="41"
+                        Click="ButtonBase_OnClick"/>
+                <Button Content ="Регистрация" 
+                        Margin="0,10,0,0" 
+                        Width="74"
+                        Click="regButton_OnClick
+                        "/>
+            </StackPanel>
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
